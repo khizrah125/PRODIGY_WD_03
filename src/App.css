@@ -1,0 +1,99 @@
+.App {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+  font-family: Arial, sans-serif;
+  background-color: #2c3e50; /* Dark Blue */
+}
+
+.title {
+  font-size: 2.5rem;
+  margin-bottom: 1rem;
+  color: #ecf0f1; /* Light Grey */
+}
+
+.game {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  border: 2px solid #2980b9; /* Medium Blue */
+  border-radius: 8px;
+  padding: 1rem;
+  background-color: #34495e; /* Blue-Grey */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.status {
+  font-size: 1.5rem;
+  margin-bottom: 1rem;
+  color: #ecf0f1; /* Light Grey */
+}
+
+.board {
+  display: grid;
+  grid-template-columns: repeat(3, 100px);
+  grid-template-rows: repeat(3, 100px);
+  gap: 10px;
+}
+
+.cell {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100px;
+  height: 100px;
+  font-size: 2rem;
+  background-color: #ecf0f1; /* Light Grey */
+  color: #2c3e50; /* Dark Blue */
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.cell:hover {
+  background-color: #bdc3c7; /* Light Grey on Hover */
+}
+
+.reset-btn {
+  margin-top: 1rem;
+  padding: 0.5rem 1rem;
+  font-size: 1rem;
+  border: none;
+  border-radius: 4px;
+  background-color: #e74c3c; /* Red */
+  color: #fff; /* White */
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.reset-btn:hover {
+  background-color: #c0392b; /* Dark Red on Hover */
+}
+
+.cell {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100px;
+  height: 100px;
+  font-size: 2rem;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.cell:hover {
+  background-color: #bdc3c7; /* Light Grey on Hover */
+}
+
+.player-x {
+  background-color: #3498db; /* Blue */
+  color: #fff; /* White */
+}
+
+.player-o {
+  background-color: #e74c3c; /* Red */
+  color: #fff; /* White */
+}
